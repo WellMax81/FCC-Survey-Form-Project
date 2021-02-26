@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+
 <html>
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>The Future of Mortal Kombat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    <main>
+    <body>
         <h1 id="title">The Future of Mortal Kombat Survey</h1>  
         <h2 id="subheading">Obtain a Flawless Victory by shaping the future of Outworld!</h2>
         <div id="objective-text">
@@ -15,38 +18,37 @@
         </div>
         <br>
         <div>
-            <h3>First we need to get a bit on admin out the way!</h3>
+            <h3>First we need to get a bit of boring admin out the way!</h3>
         </div>
-        <div id="form">
-            <form id="survey-form">
-                <label for="name">Please enter your full name:</label><br>
-                <input type="name" id="name-label" name="name" value="Enter Name here"><br>
-                <input type="submit" id="submit-box">
-                <input type="reset">
+
+        <form id="survey-form"> 
+            <label id="name-label">What is your name?</label>
+                <input type="name" placeholder="Enter Name" id="name" required>
                 <br>
+            <label id="email-label">What is your email?</label>
+                <input type="email" placeholder="Enter email" id="email" required>
                 <br>
-                <label for="email">Please enter your email address:</label><br>
-                <input type="email" id="email-label" name="email" value="Enter email here"><br>
-                <input type="submit" id="submit-box">
-                <input type="reset">
-                <br>
-                <br>
-                <em>Please note to participate in the survey you must be over 18 years of age</em><br>
-                <br>
-                <label for="age">Please enter your age</label><br>
-                <input type="number" id="number-label" name="age" value="18" min="18" max="99"><br><br>
-                <input type="submit" id="submit-box">
-                <input type="reset"><br>
-                <hr />
-            </form>
-        </div>
-        <div>
-            <h3>Now let's talk about Mortal Kombat!</h3>
-        </div>
-        <div id="form">
-            <form id="survey-form">
-                
-            </form>
-        </div>
-    </main>
-</html>
+            <label id="number-label">What is your age?</label>
+                <input type="number" placeholder="Enter age" id="number" required min="12" max="99">
+            </label>
+        </form>
+
+        <h3>Now Let's talk about Mortal Kombat!!</h3>
+        <form id="dropdown">How would you rate your experience playing Mortal Kombat?                 
+                <select id="dropdown">
+                <option id="dropdown" value="Fatality">Fatality</option>
+                <option id="dropdown" value="Brutality">Brutality</option>
+                <option id="dropdown" value="Flawless-Victory">Flawless Victory</option>
+            </select>
+        
+            <label for="characters">From the Following, who is the best?
+                <input id="Kano" type="radio" name="characters">Kano
+                <input id="Scorpian" type="radio" name="characters">Scorpian
+                <input id="SubZero" type="radio" name="characters">Sub-Zero
+        </form>
+
+
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>    
+    </body>
+</html> 
