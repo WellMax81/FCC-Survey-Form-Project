@@ -31,20 +31,48 @@
             <label id="number-label">What is your age?</label>
                 <input type="number" placeholder="Enter age" id="number" required min="12" max="99">
             </label>
-        </form>
-
-        <h3>Now Let's talk about Mortal Kombat!!</h3>
-        <form id="dropdown">How would you rate your experience playing Mortal Kombat?                 
-                <select id="dropdown">
-                <option id="dropdown" value="Fatality">Fatality</option>
-                <option id="dropdown" value="Brutality">Brutality</option>
-                <option id="dropdown" value="Flawless-Victory">Flawless Victory</option>
-            </select>
         
-            <label for="characters">From the Following, who is the best?
-                <input id="Kano" type="radio" name="characters">Kano
-                <input id="Scorpian" type="radio" name="characters">Scorpian
-                <input id="SubZero" type="radio" name="characters">Sub-Zero
+            <h3>Now Let's talk about Mortal Kombat!!</h3>
+            <p>How would you rate your experience playing Mortal Kombat?</p>
+                <select id="dropdown">
+                    <option id="dropdown" value="Fatality">Fatality</option>
+                    <option id="dropdown" value="Brutality">Brutality</option>
+                    <option id="dropdown" value="Flawless-Victory">Flawless Victory</option>
+                </select>
+            <br>
+            <div>
+                <p>Which of the following characters would you chose to drop from the roster?</p>
+                    <input type="radio" id="Sonia Blade" name="char" value="Sonia Blade"> <label for="Sonia Blade">Sonia Blade</label>
+
+                    <input type="radio" id="Kano" name="char" value="Kano"> <label for="Kano">Kano</label>
+
+                    <input type="radio" id="Scorpian" name="char" value="Scorpian"> <label for="Scorpian">Scorpian</label>
+
+                    <input type="radio" id="Sub-Zero" name="char" value="Sub-Zero"> <label for="Sub-Zero">Sub-Zero</label>
+            </div><br>
+        
+            <div>
+                <p>what other games do you like to play? (select as many as you like)</p>
+                    <input type="checkbox" name="Checkbox" value="Fortnite"> Fortnite <br>
+                    <input type="checkbox" name="Checkbox" value="Streets of Rage"> Streets of Rage <br>
+                    <input type="checkbox" name="Checkbox" value="Horizon Zero Dawn"> Horizon Zero Dawn <br>
+                    <input type="checkbox" name="Checkbox" value="Mario Kart"> Mario Kart <br>
+                    <input type="checkbox" name="Checkbox" value="Sekiro Shadows Die Twice"> Sekiro Shadows Die Twice <br>
+                    <input type="checkbox" name="Checkbox" value="Overwatch"> Overwatch <br>
+                    <input type="checkbox" name="Checkbox" value="World of Warcraft"> World of Warcraft <br>
+            </div>
+        
+               
+            <h2>Before you submit, please make sure you add any extra comments!</h2>
+                <div class="free-text">
+                    <textarea Placeholder="Enter any comments here">
+                    </textarea>
+                </div>
+        
+            <div>
+                <input type="submit" id="submit" name="submit" value="submit">
+            </div>
+        
         </form>
 
 
